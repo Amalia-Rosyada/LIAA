@@ -71,7 +71,7 @@ nav ul li a.active {
 main {
     max-width: 1200px;
     margin: 40px auto;
-    padding: 0 20px;
+    padding: 25px 20px 0 20px;
     border-radius: 10px;
     background: #fff;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
@@ -117,6 +117,40 @@ ol {
     margin-bottom: 15px;
 }
 
+#beranda {
+    padding: 60px 40px; 
+    text-align: center;
+    background-color: #f3e5f5; 
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid #6a1b9a;
+}
+
+#beranda h2 {
+    color: #4a148c;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    border-left: none; 
+    padding-left: 0;
+}
+
+#beranda p {
+    font-size: 1.2rem;
+    color: #6a1b9a;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 5px solid #ffd700;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
 
 #profil .profil-content {
     display: flex;
@@ -134,6 +168,7 @@ ol {
     flex: 1;
     text-align: center;
     min-width: 250px;
+    margin-top: 25px;
 }
 
 #profil .profil-image img {
@@ -199,6 +234,32 @@ ol {
     margin-bottom: 10px;
 }
 
+#prestasi .prestasi-list {
+    background: #e8f5f5;
+    border: 1px solid #6a1b9a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#prestasi ol {
+    padding-left: 25px; 
+    list-style-position: outside; 
+}
+
+#prestasi ol li {
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-left: 4px solid #ffd700;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+#prestasi ol li:hover {
+    background-color: #fffacd;
+}
 
 #galeri .galeri-grid {
     display: grid;
@@ -281,26 +342,13 @@ ol {
     min-width: 300px;
 }
 
-#informasi > section {
+#informasi .informasi-detail > section {
     background: #fff;
     border: 2px solid #ccc; 
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 0; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-#informasi section ol {
-    padding-left: 25px; 
-    list-style-position: outside; 
-}
-
-#informasi section ol li {
-    margin-bottom: 10px;
-    background: #f9f9f9;
-    border-left: 4px solid #ffd700;
-    padding: 8px 12px;
-    border-radius: 4px;
 }
 
 
@@ -335,6 +383,74 @@ footer address a:hover {
     text-decoration: underline;
 }
 
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin: 30px auto;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+    color: #4a148c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #6a1b9a;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 27, 154, 0.5);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #ffd700;
+    color: #4a148c;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; 
+}
+
+.contact-form button:hover {
+    background-color: #ffc700;
+    transform: translateY(-2px);
+}
+
 .social-media ul {
     list-style: none;
     display: flex;
@@ -357,7 +473,6 @@ footer address a:hover {
 }
 
 .social-media a:hover {
-    color: #fff;
     text-decoration: underline;
 }
 
@@ -387,7 +502,7 @@ footer p {
 
 
 a {
-    color: #4a148c;
+    color: #ffd700;
     text-decoration: none;
 }
 
@@ -396,7 +511,7 @@ a:hover {
 }
 
 a[target="_blank"] {
-    color: #4a148c;
+    color: #ffd700;
     font-weight: bold;
     border-bottom: 1px dotted #4a148c;
 }
@@ -405,7 +520,6 @@ a[target="_blank"]:hover {
     color: #ffd700;
     border-bottom: 1px solid #ffd700;
 }
-
 
 
 @media screen and (max-width: 768px) {
@@ -444,6 +558,19 @@ a[target="_blank"]:hover {
     h3 {
         font-size: 1.2rem;
     }
+    
+    #beranda {
+        padding: 40px 20px;
+        margin-bottom: 20px;
+    }
+    
+    #beranda h2 {
+        font-size: 2rem;
+    }
+    
+    #beranda p {
+        font-size: 1rem;
+    }
 
     #profil .profil-content {
         flex-direction: column;
@@ -480,6 +607,10 @@ a[target="_blank"]:hover {
     #informasi .informasi-detail {
         min-width: unset;
         width: 100%;
+    }
+
+    .contact-form {
+        max-width: 100%;
     }
 
     footer {
@@ -534,6 +665,10 @@ a[target="_blank"]:hover {
         padding-left: 10px;
         margin-bottom: 15px;
     }
+    
+    #beranda h2 {
+        font-size: 1.8rem;
+    }
 
     h3 {
         font-size: 1.1rem;
@@ -573,12 +708,8 @@ a[target="_blank"]:hover {
     }
 
     #informasi aside ul,
-    #informasi section ol {
+    #informasi .informasi-detail > section ol {
         padding-left: 15px;
-    }
-
-    #informasi section ol li {
-        padding: 6px 10px;
     }
 
     footer {
@@ -588,10 +719,4 @@ a[target="_blank"]:hover {
     .google-maps iframe {
         height: 250px;
     }
-
 }
-
-        display: flex;
-    }
-}
-
